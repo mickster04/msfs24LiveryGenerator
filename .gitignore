@@ -1,2 +1,12 @@
 .DS_Store
 .python-version
+ImageToMSFSKTX2-0.15/logfile.txt
+ImageToMSFSKTX2-0.15/png-2-ktx2.xml
+ImageToMSFSKTX2-0.15/png-2-ktx2.xml.user
+ImageToMSFSKTX2-0.15/userConfig.ini
+ImageToMSFSKTX2-0.15/PackageDefinitions/png-2-ktx2.xml
+ImageToMSFSKTX2-0.15/_PackageInt/_TimeStampID.xml
+*/*.xcf
+userConfig.ini
+ImageToMSFSKTX2-0.15/*
+ImageToMSFSKTX2-0.15/PackageSources/*
