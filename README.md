@@ -8,10 +8,10 @@ The point is to make it easier for sim enthusiasts to get liveries that they wan
 
 ### Setup
 
-1. You will need to install GIMP v3 or later
-1. You will need to grab a copy of the [https://github.com/theflaknine/ImageToMSFSKTX2][ImageToKTX2 tool] and put it in the same folder as the generate script files
-   Note the script expects to find a folder named ImageToMSFSKTX2-0.15 so if the version is different from this, please rename it or update the generator.py script. I will also do this occasionally in the repo.
+1. You will need to install [https://www.gimp.org/downloads/][GIMP v3 or later]
+1. Download the [https://drive.google.com/drive/folders/1GR1gJhuDeFWz8hfg-Dw8R-S_bjVBlSZH?usp=sharing][gimp livery files] for the relevant aircraft. The are a copy of the PSD files, turned into XCF files and then updated with custom masks to enable the tool to automatically setup your livery. They are too big individually to be allowed in the free git teir I'm using
 1. you will need to setup the ImageToKtx2 tool by running it once initially.
+1. Set up the config file `livery.cfg`
 
 ### Setting up the cfg
 
@@ -38,53 +38,53 @@ Finally, the option for you to add a custom logo file. this should be a square l
 
 | Setting                   | Arrow 3 | Warrior | Tomahawk |
 | ------------------------- | ------- | ------- | -------- |
-| Base                      | []      | [x]     | []       |
-| Belly                     | []      | [x]     | []       |
-| High Tide Mark            | []      | [x]     | []       |
-| Middle Tide Mark          | []      | [x]     | []       |
-| Low Tide Mark             | []      | [x]     | []       |
-| High Inverted Tide Mark   | []      | [x]     | []       |
-| Middle Inverted Tide Mark | []      | [x]     | []       |
-| Low Inverted Tide Mark    | []      | [x]     | []       |
-| Swoosh                    | []      | [x]     | []       |
-| Swoosh Line               | []      | [x]     | []       |
-| Cheat Line 1              | []      | [x]     | []       |
-| Cheat Line 2              | []      | [x]     | []       |
-| Cheat Line 3              | []      | [x]     | []       |
-| Cheat Line 4              | []      | [x]     | []       |
-| Cheat Line 5              | []      | [x]     | []       |
-| Arrow 1                   | []      | [x]     | []       |
-| Arrow 2                   | []      | [x]     | []       |
-| Arrow 3                   | []      | [x]     | []       |
-| Hockey Stick 1            | []      | []      | []       |
-| Hockey Stick 2            | []      | []      | []       |
+| Base                      | - [ ]   | [x]     | - [ ]    |
+| Belly                     | - [ ]   | [x]     | - [ ]    |
+| High Tide Mark            | - [ ]   | [x]     | - [ ]    |
+| Middle Tide Mark          | - [ ]   | [x]     | - [ ]    |
+| Low Tide Mark             | - [ ]   | [x]     | - [ ]    |
+| High Inverted Tide Mark   | - [ ]   | [x]     | - [ ]    |
+| Middle Inverted Tide Mark | - [ ]   | [x]     | - [ ]    |
+| Low Inverted Tide Mark    | - [ ]   | [x]     | - [ ]    |
+| Swoosh                    | - [ ]   | [x]     | - [ ]    |
+| Swoosh Line               | - [ ]   | [x]     | - [ ]    |
+| Cheat Line 1              | - [ ]   | [x]     | - [ ]    |
+| Cheat Line 2              | - [ ]   | [x]     | - [ ]    |
+| Cheat Line 3              | - [ ]   | [x]     | - [ ]    |
+| Cheat Line 4              | - [ ]   | [x]     | - [ ]    |
+| Cheat Line 5              | - [ ]   | [x]     | - [ ]    |
+| Arrow 1                   | - [ ]   | [x]     | - [ ]    |
+| Arrow 2                   | - [ ]   | [x]     | - [ ]    |
+| Arrow 3                   | - [ ]   | [x]     | - [ ]    |
+| Hockey Stick 1            | - [ ]   | - [ ]   | - [ ]    |
+| Hockey Stick 2            | - [ ]   | - [ ]   | - [ ]    |
 
 # Tail
 
 | Setting                   | Arrow 3 | Warrior | Tomahawk |
 | ------------------------- | ------- | ------- | -------- |
-| Base                      | []      | [x]     | []       |
-| Arrow 1                   | []      | []      | []       |
-| Arrow 2                   | []      | []      | []       |
-| Arrow 3                   | []      | []      | []       |
-| High Tide Mark            | []      | []      | []       |
-| Middle Tide Mark          | []      | []      | []       |
-| Low Tide Mark             | []      | []      | []       |
-| High Inverted Tide Mark   | []      | []      | []       |
-| Middle Inverted Tide Mark | []      | []      | []       |
-| Low Inverted Tide Mark    | []      | []      | []       |
-| Logo Image                | []      | [x]     | []       |
-| Logo Size                 | []      | [x]     | []       |
+| Base                      | - [ ]   | [x]     | - [ ]    |
+| Arrow 1                   | - [ ]   | - [ ]   | - [ ]    |
+| Arrow 2                   | - [ ]   | - [ ]   | - [ ]    |
+| Arrow 3                   | - [ ]   | - [ ]   | - [ ]    |
+| High Tide Mark            | - [ ]   | - [ ]   | - [ ]    |
+| Middle Tide Mark          | - [ ]   | - [ ]   | - [ ]    |
+| Low Tide Mark             | - [ ]   | - [ ]   | - [ ]    |
+| High Inverted Tide Mark   | - [ ]   | - [ ]   | - [ ]    |
+| Middle Inverted Tide Mark | - [ ]   | - [ ]   | - [ ]    |
+| Low Inverted Tide Mark    | - [ ]   | - [ ]   | - [ ]    |
+| Logo Image                | - [ ]   | [x]     | - [ ]    |
+| Logo Size                 | - [ ]   | [x]     | - [ ]    |
 
 # Wing
 
 | Setting                   | Arrow 3 | Warrior | Tomahawk |
 | ------------------------- | ------- | ------- | -------- |
-| Base                      | []      | [x]     | []       |
-| Belly                     | []      | [x]     | []       |
-| High Tide Mark            | []      | []      | []       |
-| Middle Tide Mark          | []      | []      | []       |
-| Low Tide Mark             | []      | []      | []       |
-| High Inverted Tide Mark   | []      | []      | []       |
-| Middle Inverted Tide Mark | []      | []      | []       |
-| Low Inverted Tide Mark    | []      | []      | []       |
+| Base                      | - [ ]   | [x]     | - [ ]    |
+| Belly                     | - [ ]   | [x]     | - [ ]    |
+| High Tide Mark            | - [ ]   | - [ ]   | - [ ]    |
+| Middle Tide Mark          | - [ ]   | - [ ]   | - [ ]    |
+| Low Tide Mark             | - [ ]   | - [ ]   | - [ ]    |
+| High Inverted Tide Mark   | - [ ]   | - [ ]   | - [ ]    |
+| Middle Inverted Tide Mark | - [ ]   | - [ ]   | - [ ]    |
+| Low Inverted Tide Mark    | - [ ]   | - [ ]   | - [ ]    |
