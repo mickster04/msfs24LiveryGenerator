@@ -8,5 +8,5 @@ ImageToMSFSKTX2-0.15/PackageDefinitions/png-2-ktx2.xml
 ImageToMSFSKTX2-0.15/_PackageInt/_TimeStampID.xml
 */*.xcf
 userConfig.ini
-ImageToMSFSKTX2-0.15/*
+ImageToMSFSKTX2-0.15/*/*
 ImageToMSFSKTX2-0.15/PackageSources/*
