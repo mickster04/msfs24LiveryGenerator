@@ -24,14 +24,14 @@ The point is to make it easier for sim enthusiasts to get liveries that they wan
 
 1. You will need to install [GIMP v3 or later](https://www.gimp.org/downloads/)
 1. Download the [gimp livery files](https://drive.google.com/drive/folders/1GR1gJhuDeFWz8hfg-Dw8R-S_bjVBlSZH?usp=sharing) for the relevant aircraft. The are a copy of the PSD files, turned into XCF files and then updated with custom masks to enable the tool to automatically setup your livery. They are too big individually to be allowed in the free git teir I'm using
-1. you will need to setup the ImageToKtx2 tool by running it once initially. [KTX2 image tool here](https://github.com/theflaknine/ImageToMSFSKTX2/releases)
-1. Set up the config file `livery.cfg`
+1. you will need to setup the ImageToKtx2 tool by running it once initially. [KTX2 image tool here](https://github.com/theflaknine/ImageToMSFSKTX2/releases) but is included in this git repo for your convenience, it will be updated periodically
+1. Set up the config file [`livery.cfg`](./livery.cfg)
 
 ## Per livery instructions
 
 ### Setting up the cfg
 
-There is a livery.cfg file here that is used to configure how you want the livery generated, basically next to each optional livery component, you put a colour. This can be a colour name like red, green or blue. Or it can be a HTML hash value like #ff0000, #00ff00 or #0000ff
+There is a [livery.cfg](./livery.cfg) file here that is used to configure how you want the livery generated, basically next to each optional livery component, you put a colour. This can be a colour name like red, green or blue. Or it can be a HTML hash value like #ff0000, #00ff00 or #0000ff
 
 You also get to chose the airframe, at the time of writing you could chose "arrow3" "warrior" or "tomahawk". you can see the full list of implemented features below.
 
