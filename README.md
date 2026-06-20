@@ -1,5 +1,7 @@
 # MSFS 2024 Livery Generator
 
+[Change Log](./changelog.md)
+
 ## Table of Contents
 
 - [MSFS 2024 Livery Generator](#msfs-2024-livery-generator)
@@ -18,14 +20,14 @@
 
 The point is to make it easier for sim enthusiasts to get liveries that they want, without necessarily having to learn everything about paintshop, the msfs livery tooling, and to break the process down into fewer, easier steps
 
-## How to
-
-### Setup
+## Initial Setup
 
 1. You will need to install [GIMP v3 or later](https://www.gimp.org/downloads/)
 1. Download the [gimp livery files](https://drive.google.com/drive/folders/1GR1gJhuDeFWz8hfg-Dw8R-S_bjVBlSZH?usp=sharing) for the relevant aircraft. The are a copy of the PSD files, turned into XCF files and then updated with custom masks to enable the tool to automatically setup your livery. They are too big individually to be allowed in the free git teir I'm using
 1. you will need to setup the ImageToKtx2 tool by running it once initially. [KTX2 image tool here](https://github.com/theflaknine/ImageToMSFSKTX2/releases)
 1. Set up the config file `livery.cfg`
+
+## Per livery instructions
 
 ### Setting up the cfg
 
@@ -46,71 +48,6 @@ Finally, the option for you to add a custom logo file. this should be a square l
 1. You can check the PNG file to see if it looks about right, and the XCF files if you want to futher modify the livery, then export as PNG again.
 1. Then you can run the `Image to MSFS KTX2.bat` in the image2ktx folder to generate the correct output files for the compiled livery
 1. Finally copy that into the correct part of your community folder. I recommend using a working example from flightsim.to and then replacing the files in the folder with the ones you generated, update the cfg files in that folder to use your name etc.
-
-## Feature Completion
-
-### TODO
-
-- [ ] finish masking warrior
-- [ ] Mask arrow3
-- [ ] Mask tomahawk
-- [ ] Work out how to make white dynamic rego for liveries (at least document the porocess for the community)
-- [ ] Chose next airframe(s) to mask
-
-### Body
-
-| Setting                   | Arrow 3      | Warrior            | Tomahawk     |
-| ------------------------- | ------------ | ------------------ | ------------ |
-| Base                      | :red_square: | :white_check_mark: | :red_square: |
-| Belly                     | :red_square: | :white_check_mark: | :red_square: |
-| High Tide Mark            | :red_square: | :white_check_mark: | :red_square: |
-| Middle Tide Mark          | :red_square: | :white_check_mark: | :red_square: |
-| Low Tide Mark             | :red_square: | :white_check_mark: | :red_square: |
-| High Inverted Tide Mark   | :red_square: | :white_check_mark: | :red_square: |
-| Middle Inverted Tide Mark | :red_square: | :white_check_mark: | :red_square: |
-| Low Inverted Tide Mark    | :red_square: | :white_check_mark: | :red_square: |
-| Swoosh                    | :red_square: | :white_check_mark: | :red_square: |
-| Swoosh Line               | :red_square: | :white_check_mark: | :red_square: |
-| Cheat Line 1              | :red_square: | :white_check_mark: | :red_square: |
-| Cheat Line 2              | :red_square: | :white_check_mark: | :red_square: |
-| Cheat Line 3              | :red_square: | :white_check_mark: | :red_square: |
-| Cheat Line 4              | :red_square: | :white_check_mark: | :red_square: |
-| Cheat Line 5              | :red_square: | :white_check_mark: | :red_square: |
-| Arrow 1                   | :red_square: | :white_check_mark: | :red_square: |
-| Arrow 2                   | :red_square: | :white_check_mark: | :red_square: |
-| Arrow 3                   | :red_square: | :white_check_mark: | :red_square: |
-| Hockey Stick 1            | :red_square: | :red_square:       | :red_square: |
-| Hockey Stick 2            | :red_square: | :red_square:       | :red_square: |
-
-### Tail
-
-| Setting                   | Arrow 3      | Warrior            | Tomahawk     |
-| ------------------------- | ------------ | ------------------ | ------------ |
-| Base                      | :red_square: | :white_check_mark: | :red_square: |
-| Arrow 1                   | :red_square: | :red_square:       | :red_square: |
-| Arrow 2                   | :red_square: | :red_square:       | :red_square: |
-| Arrow 3                   | :red_square: | :red_square:       | :red_square: |
-| High Tide Mark            | :red_square: | :red_square:       | :red_square: |
-| Middle Tide Mark          | :red_square: | :red_square:       | :red_square: |
-| Low Tide Mark             | :red_square: | :red_square:       | :red_square: |
-| High Inverted Tide Mark   | :red_square: | :red_square:       | :red_square: |
-| Middle Inverted Tide Mark | :red_square: | :red_square:       | :red_square: |
-| Low Inverted Tide Mark    | :red_square: | :red_square:       | :red_square: |
-| Logo Image                | :red_square: | :white_check_mark: | :red_square: |
-| Logo Size                 | :red_square: | :white_check_mark: | :red_square: |
-
-### Wing
-
-| Setting                   | Arrow 3      | Warrior            | Tomahawk     |
-| ------------------------- | ------------ | ------------------ | ------------ |
-| Base                      | :red_square: | :white_check_mark: | :red_square: |
-| Belly                     | :red_square: | :white_check_mark: | :red_square: |
-| High Tide Mark            | :red_square: | :red_square:       | :red_square: |
-| Middle Tide Mark          | :red_square: | :red_square:       | :red_square: |
-| Low Tide Mark             | :red_square: | :red_square:       | :red_square: |
-| High Inverted Tide Mark   | :red_square: | :red_square:       | :red_square: |
-| Middle Inverted Tide Mark | :red_square: | :red_square:       | :red_square: |
-| Low Inverted Tide Mark    | :red_square: | :red_square:       | :red_square: |
 
 ## How can I help
 
