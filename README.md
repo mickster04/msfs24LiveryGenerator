@@ -8,9 +8,9 @@ The point is to make it easier for sim enthusiasts to get liveries that they wan
 
 ### Setup
 
-1. You will need to install [https://www.gimp.org/downloads/][GIMP v3 or later]
-1. Download the [https://drive.google.com/drive/folders/1GR1gJhuDeFWz8hfg-Dw8R-S_bjVBlSZH?usp=sharing][gimp livery files] for the relevant aircraft. The are a copy of the PSD files, turned into XCF files and then updated with custom masks to enable the tool to automatically setup your livery. They are too big individually to be allowed in the free git teir I'm using
-1. you will need to setup the ImageToKtx2 tool by running it once initially.
+1. You will need to install [GIMP v3 or later][https://www.gimp.org/downloads/]
+1. Download the [gimp livery files][https://drive.google.com/drive/folders/1GR1gJhuDeFWz8hfg-Dw8R-S_bjVBlSZH?usp=sharing] for the relevant aircraft. The are a copy of the PSD files, turned into XCF files and then updated with custom masks to enable the tool to automatically setup your livery. They are too big individually to be allowed in the free git teir I'm using
+1. you will need to setup the ImageToKtx2 tool by running it once initially. [KTX2 image tool here][https://github.com/theflaknine/ImageToMSFSKTX2/releases]
 1. Set up the config file `livery.cfg`
 
 ### Setting up the cfg
