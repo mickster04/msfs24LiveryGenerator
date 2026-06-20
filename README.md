@@ -49,6 +49,14 @@ Finally, the option for you to add a custom logo file. this should be a square l
 
 ## Feature Completion
 
+### TODO
+
+- [ ] finish masking warrior
+- [ ] Mask arrow3
+- [ ] Mask tomahawk
+- [ ] Work out how to make white dynamic rego for liveries (at least document the porocess for the community)
+- [ ] Chose next airframe(s) to mask
+
 ### Body
 
 | Setting                   | Arrow 3      | Warrior            | Tomahawk     |
