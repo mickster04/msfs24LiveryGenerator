@@ -1,6 +1,6 @@
 # MSFS 2024 Livery Generator #
 
-## what's the point ##
+## What's the point ##
 The point is to make it easier for sim enthusiasts to get liveries that they want, without necessarily having to learn everything about paintshop, the msfs livery tooling, and to break the process down into fewer, easier steps
 
 ## How to ##
@@ -22,5 +22,7 @@ The folder name is the name...of the output folder where the finished files are 
 Finally, the option for you to add a custom logo file. this should be a square logo, and whilst you can define the size (GIMP will scale you logo file for you) I would probably try it with default values to begin with.
 
 ### Run ### 
-you can simply run either generateLivery file. `.bat` for windows and `.sh` for everywhere
-
+1. you can simply run either generateLivery file. `.bat` for windows and `.sh` for everywhere
+1. The files will be put in the folder name you chose (or customlivery by default)
+1. You can check the PNG file to see if it looks about right, and the XCF files if you want to futher modify the livery, then export as PNG again.
+1. Then you can run the `Image to MSFS KTX2.bat` in the image2ktx folder to generate the correct output files for the compiled livery
