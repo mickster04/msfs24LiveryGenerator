@@ -26,3 +26,12 @@ Finally, the option for you to add a custom logo file. this should be a square l
 1. The files will be put in the folder name you chose (or customlivery by default)
 1. You can check the PNG file to see if it looks about right, and the XCF files if you want to futher modify the livery, then export as PNG again.
 1. Then you can run the `Image to MSFS KTX2.bat` in the image2ktx folder to generate the correct output files for the compiled livery
+
+## Feature Completion ##
+
+
+|  | Warrior | Arrow3 | Tomahawk |
+| ---------| -------- | -------- | -------- |
+| Base  | Row 1 B  | Row 1 C  | |
+| Belly  | Row 2 B  | Row 2 C  | |
+
