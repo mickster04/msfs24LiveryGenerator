@@ -1,8 +1,9 @@
 # change history
 
-| date    | version | change                               |
-| ------- | ------- | ------------------------------------ |
-| 20.6.26 | 0.1     | initial version warrior mostly there |
+| date    | version | change                                   |
+| ------- | ------- | ---------------------------------------- |
+| 21.6.26 | 0.11    | added ability to flip a logo on the tail |
+| 20.6.26 | 0.1     | initial version warrior mostly there     |
 
 ## Feature Completion
 
