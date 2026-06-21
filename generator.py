@@ -64,6 +64,9 @@ def main():
             for maskLayer in sectionLayer.get_children():
                 sectionLiveryLayer.mapLayer(image,maskLayer)
            
+        # print("=== IMAGE TREE ===")
+        # for layer in image.get_layers():
+        #     dump(layer)
         save(image, output_path, base_template_file, cleanName)
         print("Next file")
     if cleanInterior:
@@ -79,14 +82,28 @@ def save(image, output_path, base_template_file, cleanName):
     print(f"saving {base_template_file.name} and {cleanName}.png files")
     out_xcf = Gio.File.new_for_path(output_path.name+"/"+base_template_file.name)
     out_png = Gio.File.new_for_path(output_path.name+"/"+cleanName+'.png')
+    # print('xcf')
     Gimp.file_save(Gimp.RunMode.NONINTERACTIVE, image, out_xcf)
+    # print('png')
     Gimp.file_save(Gimp.RunMode.NONINTERACTIVE, image, out_png)
 
     ktx2gen = Gio.File.new_for_path("./ImageToMSFSKTX2-0.15/ALBD/"+cleanName+'.png')
+    # print('KTX2 png')
     Gimp.file_save(Gimp.RunMode.NONINTERACTIVE, image, ktx2gen)
 
     # Clean up image memory
     image.delete()
+
+def dump(item, depth=0):
+    print("  " * depth + item.get_name())
+
+    try:
+        for child in item.get_children():
+            dump(child, depth + 1)
+    except:
+        pass
+
+
 
 class LiveryLayerSection:
 
@@ -124,6 +141,7 @@ class LiveryLayerSection:
         
         self.logo_size=config.getint(self.section_name, "logo_size",  fallback=None)
         self.logo_image=config.get(self.section_name, "logo_image",  fallback=None)
+        self.logo_flip=config.getboolean(self.section_name, "logo_flip",  fallback=None)
 
     def mapLayer(self ,image, layer):
         # print(f"Checking if mask {layer.get_name()} should be used")
@@ -143,6 +161,11 @@ class LiveryLayerSection:
     def _setLogo(self, image, layer):
         image_location =self.logo_image
         image_size=self.logo_size
+        should_flip=self.logo_flip
+        layername = layer.get_name()
+        width = layer.get_width()
+        height = layer.get_height()
+
         print(f"putting logo {image_location} on {layer.get_name()}")
         # 4. Load the replacement image as a new standalone layer object
         new_logo_file = Gio.File.new_for_path(image_location)
@@ -153,16 +176,32 @@ class LiveryLayerSection:
         if not newLogoLayer1 :
             print("Error: Failed to load replacement image as a layer.")
             return
+        
         # 5. Capture the geometry metadata from the old layer
         position1 = image.get_item_position(layer) # Stack position
         parent1 = layer.get_parent()              # Check if it lives inside a layer group
         success1, x_offset1, y_offset1 = layer.get_offsets() # Keep original placement
-
-        # 6. Insert the new layer and match coordinates
-        image.insert_layer(newLogoLayer1, parent1, position1)
-        newLogoLayer1.set_name(layer.get_name()) # Take over the old layer name
-        # 7. Purge the old layer
-        image.remove_layer(layer)
+        
+        image.insert_layer(newLogoLayer1, parent1, position1)        
+        
+        newLogoLayer1.set_name(layername) # Take over the old layer name        
         newLogoLayer1.scale(image_size,image_size,0)
         newLogoLayer1.set_offsets(x_offset1, y_offset1)
-        # print('logo1 '+ str(x_offset1) +' '+str(y_offset1))
+        image.remove_layer(layer)
+        # 6. Insert the new layer and match coordinates
+        if should_flip and '2' in layername:
+            flipped = newLogoLayer1.transform_flip_simple(
+                Gimp.OrientationType.HORIZONTAL,
+                True,
+                0
+            )            
+
+            newLogoLayer1 = flipped
+            newLogoLayer1.set_name(layername) # Take over the old layer name        
+            newLogoLayer1.set_offsets(x_offset1, y_offset1)
+
+        
+        
+
+
+
