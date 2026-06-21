@@ -52,7 +52,7 @@
 | High Tide Mark            | :red_square: | :red_square:       | :red_square: |
 | Middle Tide Mark          | :red_square: | :red_square:       | :red_square: |
 | Low Tide Mark             | :red_square: | :red_square:       | :red_square: |
-| High Inverted Tide Mark   | :red_square: | :red_square:       | :red_square: |
+| High Inverted Tide Mark   | :red_square: | :white_check_mark: | :red_square: |
 | Middle Inverted Tide Mark | :red_square: | :white_check_mark: | :red_square: |
 | Low Inverted Tide Mark    | :red_square: | :white_check_mark: | :red_square: |
 | Logo Image                | :red_square: | :white_check_mark: | :red_square: |
